@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex shrink</title>
+
+    <style>
+        .flex-container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 350px;
+            margin: 5px;
+
+        }
+        .item{
+            background: orangered;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+        .shrink-1{
+            flex-shrink: 1;
+        }
+        .fg-1{
+            flex-grow: 1;
+        }
+        .shrink-0{
+            flex-shrink: 0;
+            flex-basis:  100px;
+        }
+
+    </style>
+</head>
+<body>
+    <p>flex-shrink: 1</p>
+    <div class="flex-container">
+        <div class="item shrink-1 fg-1">M</div>
+        <div class="item shrink-1 fg-1">N</div>
+        <div class="item shrink-1 fg-1">O</div>
+        <div class="item shrink-1 fg-1">P</div>
+    </div>
+    <div class="flex-container">
+        <div class="item shrink-1 fg-1">M</div>
+        <div class="item shrink-1 fg-1">Marlceiokalldajsdjj j</div>
+        <div class="item shrink-1 fg-1">O</div>
+        <div class="item shrink-1 fg-1">P</div>
+    </div>
+    <p>flex-shrink: 0</p>
+    <div class="flex-container">
+        <div class="item shrink-0 fg-1">M</div>
+        <div class="item shrink-0 fg-1">Nasdasd</div>
+        <div class="item shrink-0 fg-1">Oqweqweasd</div>
+        <div class="item shrink-0 fg-1">P</div>
+    </div>
+</body>
+</html>
