@@ -13,3 +13,7 @@ function par(array){
 let array = [1, 2, 3, 4, 5, 6, 7 ,8 ,9 ,10];
 
 par(array);
+
+const myMap = new Map();
+myMap.set('banana', 'fruta');
+console.log(myMap.get('banana'));
